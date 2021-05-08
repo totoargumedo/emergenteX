@@ -1,4 +1,5 @@
 @import url(fonts.scss);
+@import url(colors.scss);
 * {
   margin: 0;
   padding: 0;
