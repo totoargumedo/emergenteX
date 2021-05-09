@@ -14,19 +14,70 @@ a:link, a:visited, a:active {
 /*  Navbar header */
 
 .header{
-
+    
     .headerNavbar{
 
-        background-color: $verde;
+        height: 20vh;
+        background-color: $azul;
+        font-family: $texto;
+        font-weight: 300;
+        
         
         .headerNavbar__logo{
 
-            height: 7vh;
-            width: 7vw;
+            margin-left: 5vw;
+            height: 10vh;
+            width: 10vw;
         }
+
         .headerNavbar__secciones{
 
-            
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: flex-end;
+            margin-right: 2vw;
+
+            .nav-item{
+
+                padding: 1vh 1vw;
+
+                &:hover{
+
+                    border-bottom: 3px solid $verde;
+                }
+            }
+        }
+
+        .headerNavbar__boton{
+
+            color: $negro;
+            text-decoration: none;
+            background-color: $blanco;
+            text-align: center;
+            width: 8vw;
+            padding: 10px;
+            border-radius: 20px;
+            margin: 0 2vh;
+
+            &:hover{
+                background-color: $verde;
+            }
+        }
+
+        .headerNavbar__boton--invertido{
+
+            color: $negro;
+            text-decoration: none;
+            background-color: $verde;
+            text-align: center;
+            width: 8vw;
+            padding: 10px;
+            border-radius: 20px;
+            margin: 0 2vh;
+
+            &:hover{
+                background-color: $blanco;
+            }
         }
     }
 }
@@ -40,5 +91,21 @@ a:link, a:visited, a:active {
             height: 5vh;
             width: 5vw;
         }
+    }
+
+    .footerNavegacion{
+
+    }
+
+    .footerTecnico{
+
+    }
+
+    .footerMapa{
+
+    }
+
+    .footerDerechos{
+
     }
 }

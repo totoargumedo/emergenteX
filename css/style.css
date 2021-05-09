@@ -10,12 +10,68 @@ a:link, a:visited, a:active {
 
 /*  Navbar header */
 .header .headerNavbar {
-  background-color: #34FFC8;
+  height: 20vh;
+  background-color: #001b38;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 300;
 }
 
 .header .headerNavbar .headerNavbar__logo {
-  height: 7vh;
-  width: 7vw;
+  margin-left: 5vw;
+  height: 10vh;
+  width: 10vw;
+}
+
+.header .headerNavbar .headerNavbar__secciones {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-right: 2vw;
+}
+
+.header .headerNavbar .headerNavbar__secciones .nav-item {
+  padding: 1vh 1vw;
+}
+
+.header .headerNavbar .headerNavbar__secciones .nav-item:hover {
+  border-bottom: 3px solid #34FFC8;
+}
+
+.header .headerNavbar .headerNavbar__boton {
+  color: #121212;
+  text-decoration: none;
+  background-color: #f5f5f5;
+  text-align: center;
+  width: 8vw;
+  padding: 10px;
+  border-radius: 20px;
+  margin: 0 2vh;
+}
+
+.header .headerNavbar .headerNavbar__boton:hover {
+  background-color: #34FFC8;
+}
+
+.header .headerNavbar .headerNavbar__boton--invertido {
+  color: #121212;
+  text-decoration: none;
+  background-color: #34FFC8;
+  text-align: center;
+  width: 8vw;
+  padding: 10px;
+  border-radius: 20px;
+  margin: 0 2vh;
+}
+
+.header .headerNavbar .headerNavbar__boton--invertido:hover {
+  background-color: #f5f5f5;
 }
 
 .footer .footerRedes .footerRedes__logo {
