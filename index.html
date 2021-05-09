@@ -11,13 +11,26 @@
 </head>
 <body>
     <!--Header con barra de navegacion que incluye logo, secciones y login, se colapsa en movil-->
-    <header>
-        <nav class="navHeader navbar navbar-dark bg-dark">
+    <header class="header">
+        <nav class="navbar navbar-dark navbar-expand-md headerNavbar">
             <!--Logo de la empresa-->
-            <a href="index.html">
-                <img src="images/logo-navbar.svg" alt="Emergente">    
+            <a class="navbrand headerNavbar__logo" href="index.html">
+                <img src="images/logo-navbar.svg" alt="Logo Emergente">    
             </a>
-            <!--Links a secciones-->
+            <!--Boton reponsivo utilizando toggler de bootstrap-->
+            <button class="navbar-toggler headerNavbar__toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSecciones" aria-controls="navbarSecciones" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!--Links a secciones con collapse a toggler y botones de registro-->
+            <div class="navbar-nav collapse navbar-collapse headerNavbar__secciones" id="navbarSecciones">
+                <a class="nav-item nav-link active" href="index.html">Inicio</a>
+                <a class="nav-item nav-link" href="servicios.html">Servicios</a>
+                <a class="nav-item nav-link" href="nosotros.html">Nosotros</a>
+                <a class="nav-item nav-link" href="novedades.html">Novedades</a>
+                <a class="nav-item nav-link" href="contacto.html">Contacto</a>
+                <a class="btn btn-outline-primary" href="">Acceder</a>
+                <a class="btn btn-outline-primary" href="">Registrarme</a>
+            </div>
         </nav>
     </header>
 
@@ -27,8 +40,48 @@
         </section>
     </main>
 
-    <footer>
-
+    <!--Footer con detalle empresa, logos de redes, panel de navegacion, ubicacion, copyrights, politicas y medios de pago-->
+    <footer class="footer">
+        <!--Detalle de empresa y redes-->
+        <div class="footerRedes">
+            <h3>Emergente Servicios Informatico</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero eaque cum ab enim, repellendus praesentium, veniam sequi cumque itaque accusamus maiores nobis dicta tempore, neque aspernatur alias doloribus sit veritatis.</p>
+            <a href="https://www.facebook.com/elonmusknoticias">
+                <img class="footerRedes__logo" src="images/logofacebook.svg" alt="Facebook Emergente">
+            </a>
+            <a href="https://www.instagram.com/elonofficiall/">
+                <img class="footerRedes__logo" src="images/logoinstagram.svg" alt="Instagram Emergente">
+            </a>
+            <a href="https://twitter.com/elonmusk">
+                <img class="footerRedes__logo" src="images/logotwitter.svg" alt="Twitter Emergente">
+            </a>
+            <a href="https://www.linkedin.com/showcase/elon-musk-newslines">
+                <img class="footerRedes__logo" src="images/logolinkedin.svg" alt="LinkedIn Emergente">
+            </a>
+            <!--Logo de telefonos con modal a telefono y whatsapp-->
+            <a data-bs-toggle="modal" data-bs-target="#modalTelefonos" href="">
+                <img class="footerRedes__logo" src="images/logowhatsapp.svg" alt="Telefonos Emergente">
+            </a>
+            <!--modal telefonos-->
+            <div class="modal fade" id="modalTelefonos" tabindex="-1" aria-labelledby="modalTelefonosLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="modalTelefonos">Emergente Servicios Informaticos</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <p>Podes comunicarte directamente con nosotros a traves de nuestros telefonos o nuestro Whatsapp</p>
+                      <h6>+54 2604 555555</h6>
+                      <a href="https://web.whatsapp.com/">web.whatsapp.com</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+        <!--Barra de navegacion secciones inferior-->
+        
+        <!--Barra de navegacion de servicio tecnico-->
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
 </body>

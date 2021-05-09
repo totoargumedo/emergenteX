@@ -1,9 +1,25 @@
-@import url(fonts.scss);
-@import url(colors.scss);
+/* quita de estilos predeterminados a margenes, paddings y links*/
 * {
   margin: 0;
   padding: 0;
 }
 
+a:link, a:visited, a:active {
+  text-decoration: none;
+}
+
 /*  Navbar header */
+.header .headerNavbar {
+  background-color: #34FFC8;
+}
+
+.header .headerNavbar .headerNavbar__logo {
+  height: 7vh;
+  width: 7vw;
+}
+
+.footer .footerRedes .footerRedes__logo {
+  height: 5vh;
+  width: 5vw;
+}
 /*# sourceMappingURL=style.css.map */

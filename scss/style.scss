@@ -1,15 +1,44 @@
-@import url(fonts.scss);
-@import url(colors.scss);
+@import "fonts.scss";
+@import "colors.scss";
 
+/* quita de estilos predeterminados a margenes, paddings y links*/ 
 *{
     margin: 0;
     padding: 0;
 }
 
-/*  Navbar header */
-
-.navHeader{
-    
-    background-color: $verde;
+a:link, a:visited, a:active {
+    text-decoration:none;
 }
 
+/*  Navbar header */
+
+.header{
+
+    .headerNavbar{
+
+        background-color: $verde;
+        
+        .headerNavbar__logo{
+
+            height: 7vh;
+            width: 7vw;
+        }
+        .headerNavbar__secciones{
+
+            
+        }
+    }
+}
+
+.footer{
+
+    .footerRedes{
+
+        .footerRedes__logo{
+
+            height: 5vh;
+            width: 5vw;
+        }
+    }
+}
