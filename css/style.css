@@ -788,4 +788,57 @@ body {
 }
 
 /* Fin contenido contacto*/
+/*404*/
+.bienvenida404 {
+  margin: 0;
+  height: 63vh;
+  background-image: url("/images/fondo404.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.bienvenida404 .bienvenida404__titulo {
+  font-family: "Muni", sans-serif;
+  color: #121212;
+  font-weight: 900;
+  font-size: 2.5em;
+  padding-top: 5vh;
+}
+
+.bienvenida404 .bienvenida404__texto {
+  padding: 0;
+  font-family: "Noto Sans", sans-serif;
+  color: #121212;
+  font-weight: 600;
+}
+
+.bienvenida404 .bienvenida404__boton {
+  color: #121212;
+  text-decoration: none;
+  background-color: #34FFC8;
+  width: 130px;
+  padding: 1vh 1vw;
+  border-radius: 20px;
+  margin: auto auto;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 600;
+  text-align: center;
+}
+
+.bienvenida404 .bienvenida404__boton:hover {
+  background-color: #f5f5f5;
+}
+
+/*404*/
 /*# sourceMappingURL=style.css.map */

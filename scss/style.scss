@@ -864,3 +864,55 @@ body{
 }
 
 /* Fin contenido contacto*/
+
+/*404*/
+
+.bienvenida404{
+
+    margin: 0;
+    height: min(63vh);
+    background-image: url("/images/fondo404.png");
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    .bienvenida404__titulo{
+
+        font-family: $titulos;
+        color: $negro;
+        font-weight: 900;
+        font-size: 2.5em;
+        padding-top: 5vh;
+    }
+
+    .bienvenida404__texto{
+
+        padding: 0;
+        font-family: $texto;
+        color: $negro;
+        font-weight: 600;
+    }
+
+    .bienvenida404__boton{
+
+        color: $negro;
+        text-decoration: none;
+        background-color: $verde;
+        width: 130px;
+        padding: 1vh 1vw;
+        border-radius: 20px;
+        margin: auto auto;
+        font-family: $texto;
+        font-weight: 600;
+        text-align: center;
+            
+        &:hover{
+            background-color: $blanco;
+        }
+    }
+}
+/*404*/
