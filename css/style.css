@@ -1,3 +1,8 @@
+.texto, .footer .footerRedes .footerRedes__texto {
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 500;
+}
+
 /* quita de estilos predeterminados a margenes, paddings y links*/
 * {
   margin: 0;
@@ -6,6 +11,20 @@
 
 a:link, a:visited, a:active {
   text-decoration: none;
+}
+
+/* padding body para que el texto no se meta detras */
+body {
+  padding-top: 20vh;
+}
+
+/* solucion para modales que no se abren bien dentro de un bloque con position:fixed */
+.modal-backdrop {
+  display: none;
+}
+
+.modal {
+  background: rgba(0, 0, 0, 0.5);
 }
 
 /*  Navbar header */
@@ -74,8 +93,99 @@ a:link, a:visited, a:active {
   background-color: #f5f5f5;
 }
 
+.footer {
+  background-color: #34FFC8;
+}
+
+.footer .footerRedes {
+  padding: 5vh;
+}
+
+.footer .footerRedes .footerRedes__titulo {
+  font-family: "Muni", sans-serif;
+  font-weight: 600;
+  font-size: 1.6em;
+  color: #2F2F2F;
+}
+
+.footer .footerRedes .footerRedes__texto {
+  color: #2F2F2F;
+  padding: 2vh 0;
+}
+
 .footer .footerRedes .footerRedes__logo {
   height: 5vh;
   width: 5vw;
+}
+
+.footer .footerNavegacion {
+  padding: 5vh;
+}
+
+.footer .footerNavegacion .footerNavegacion__titulo {
+  color: #2F2F2F;
+  font-family: "Muni", sans-serif;
+  font-weight: 600;
+}
+
+.footer .footerNavegacion .nav-link {
+  color: #2F2F2F;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 600;
+}
+
+.footer .footerTecnico {
+  padding: 5vh;
+}
+
+.footer .footerTecnico .footerTecnico__titulo {
+  color: #2F2F2F;
+  font-family: "Muni", sans-serif;
+  font-weight: 600;
+}
+
+.footer .footerTecnico .nav-link {
+  color: #2F2F2F;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 600;
+}
+
+.footer .footerMapa {
+  height: 70vh;
+  padding: 5vh;
+}
+
+.footer .footerDerechos {
+  background-color: #121212;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.footer .footerDerechos .nav-link {
+  color: #f5f5f5;
+  font-family: "Muni", sans-serif;
+  font-size: 0.7em;
+  font-weight: 800;
+  padding: 2vh;
+  margin: 3vh;
+}
+
+.footer .footerDerechos .nav-link--copy {
+  padding-right: 40vw;
+}
+
+.footer .footerDerechos .nav-link--hover:hover {
+  border-bottom: 3px solid #34FFC8;
 }
 /*# sourceMappingURL=style.css.map */

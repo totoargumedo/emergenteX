@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "",
+    "mappings": "AAGA,AAAA,MAAM,CAAA;EAEF,WAAW,EAJP,WAAW,EAAE,UAAU;EAK3B,WAAW,EAAE,GAAG;CACnB",
     "sources": [
         "../scss/fonts.scss"
     ],

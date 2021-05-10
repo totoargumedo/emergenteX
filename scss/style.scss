@@ -11,6 +11,20 @@ a:link, a:visited, a:active {
     text-decoration:none;
 }
 
+/* padding body para que el texto no se meta detras */
+body{
+    
+    padding-top: 20vh;
+}
+/* solucion para modales que no se abren bien dentro de un bloque con position:fixed */
+.modal-backdrop {
+    display: none;
+  }
+  
+  .modal {
+    background: rgba(0,0,0,0.5);
+  }
+
 /*  Navbar header */
 
 .header{
@@ -84,7 +98,26 @@ a:link, a:visited, a:active {
 
 .footer{
 
+    background-color: $verde;
+    
     .footerRedes{
+
+        padding: 5vh;
+
+        .footerRedes__titulo{
+
+            font-family: $titulos;
+            font-weight: 600;
+            font-size: 1.6em;
+            color: $grisOscuro;
+        }
+
+        .footerRedes__texto{
+
+            @extend .texto;
+            color: $grisOscuro;
+            padding: 2vh 0;
+        }
 
         .footerRedes__logo{
 
@@ -95,17 +128,75 @@ a:link, a:visited, a:active {
 
     .footerNavegacion{
 
+        padding: 5vh;
+        
+        .footerNavegacion__titulo{
+
+            color: $grisOscuro;  
+            font-family: $titulos;
+            font-weight: 600;
+        }
+
+        .nav-link{
+
+            color: $grisOscuro;
+            font-family: $texto;
+            font-weight: 600;
+        }
+
     }
 
     .footerTecnico{
 
+        padding: 5vh;
+        
+        .footerTecnico__titulo{
+
+            color: $grisOscuro;  
+            font-family: $titulos;
+            font-weight: 600;
+        }
+
+        .nav-link{
+
+            color: $grisOscuro;
+            font-family: $texto;
+            font-weight: 600;
+        }
     }
 
     .footerMapa{
 
+        height: 70vh;
+        padding: 5vh;
     }
 
     .footerDerechos{
 
+        background-color: $negro;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: flex-end;
+        
+       .nav-link{
+
+            color: $blanco;
+            font-family: $titulos;
+            font-size: 0.7em;
+            font-weight: 800;
+            padding: 2vh;
+            margin: 3vh;
+        }
+        
+        .nav-link--copy{
+
+            padding-right: 40vw;
+        }
+        
+        .nav-link--hover:hover{
+
+            border-bottom: 3px solid $verde;
+       }
     }
 }
