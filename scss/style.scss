@@ -346,9 +346,7 @@ body{
     .confianzaIndex__logos{
 
         display: flex;
-        flex-flow: row nowrap;
-        justify-content: space-around;
-        align-items: center;
+        justify-content: space-evenly;
     }
 }
 
