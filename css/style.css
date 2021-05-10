@@ -293,7 +293,7 @@ body {
 
 .nosotrosIndex .nosotrosIndex__contenido .nosotrosIndex__contenido__texto {
   font-family: "Noto Sans", sans-serif;
-  color: #f5f5f5;
+  color: #534f4f;
   font-weight: 500;
   text-align: center;
 }
@@ -411,6 +411,7 @@ body {
 
 /*Fin contenido index*/
 /*Contenido Servicios*/
+/*bienvenida*/
 .bienvenidaServicios {
   margin: 0;
   height: 83vh;
@@ -419,25 +420,29 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   text-align: center;
-  padding: 25vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .bienvenidaServicios .bienvenidaServicios__titulo {
   font-family: "Muni", sans-serif;
   color: #f5f5f5;
   font-weight: 900;
-  font-size: 3em;
+  font-size: 2.5em;
+  padding-top: 5vh;
 }
 
 .bienvenidaServicios .bienvenidaServicios__texto {
+  padding: 0;
   font-family: "Noto Sans", sans-serif;
   color: #f5f5f5;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  -ms-grid-column-align: center;
-      justify-self: center;
-  text-align: center;
 }
 
 .bienvenidaServicios .bienvenidaServicios__boton {
@@ -463,12 +468,7 @@ body {
   padding: 6vh;
 }
 
-.servicioTecnico .nosotrosIndex__contenido {
-  margin: auto 0;
-  padding: 4vh;
-}
-
-.servicioTecnico .nosotrosIndex__contenido .servicioTecnico__titulo {
+.servicioTecnico .servicioTecnico__titulo {
   font-family: "Muni", sans-serif;
   color: #f5f5f5;
   font-weight: 600;
@@ -477,15 +477,141 @@ body {
   padding: 1vh;
 }
 
-.servicioTecnico .nosotrosIndex__contenido .nosotrosIndex__contenido__texto {
-  font-family: "Noto Sans", sans-serif;
-  color: #f5f5f5;
-  font-weight: 500;
-  text-align: center;
+.servicioTecnico .servicioTecnico__tarjetas {
+  padding: 4vh;
 }
 
-.servicioTecnico .nosotrosIndex_imagenes {
-  padding: 3vh;
+.servicioTecnico .servicioTecnico__tarjetas h3 {
+  padding: 1vh;
+  font-family: "Muni", sans-serif;
+  color: #f5f5f5;
+  font-weight: 600;
+}
+
+.servicioTecnico .servicioTecnico__tarjetas .servicioTecnico__tarjetas__texto p {
+  padding: 1vh;
+  font-family: "Noto Sans", sans-serif;
+  color: #534f4f;
+  font-weight: 500;
+}
+
+.servicioTecnico .servicioTecnico__tarjetas .servicioTecnico__tarjetas__lista ul {
+  padding: 0 15vw;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 500;
+  color: #534f4f;
+}
+
+/* Tarjetas servicios networking, consultoria it y data recovery*/
+.tarjetaServicios--inverse {
+  background-color: #121212;
+  padding: 2vh;
+  margin: 0;
+}
+
+.tarjetaServicios--inverse .tarjetaServicios__texto--inverse {
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.tarjetaServicios--inverse .tarjetaServicios__texto--inverse h2 {
+  font-family: "Muni", sans-serif;
+  color: #f5f5f5;
+  font-weight: 600;
+  font-size: 2.5em;
+  padding: 1vh;
+}
+
+.tarjetaServicios--inverse .tarjetaServicios__texto--inverse p {
+  font-family: "Noto Sans", sans-serif;
+  color: #534f4f;
+  font-weight: 500;
+}
+
+.tarjetaServicios--inverse .tarjetaServicios__imagen--inverse {
+  padding: 5vh;
+}
+
+.tarjetaServicios {
+  background-color: #2F2F2F;
+  padding: 2vh;
+  margin: 0;
+}
+
+.tarjetaServicios .tarjetaServicios__texto {
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.tarjetaServicios .tarjetaServicios__texto h2 {
+  font-family: "Muni", sans-serif;
+  color: #f5f5f5;
+  font-weight: 600;
+  font-size: 2.5em;
+  padding: 1vh;
+}
+
+.tarjetaServicios .tarjetaServicios__texto p {
+  font-family: "Noto Sans", sans-serif;
+  color: #534f4f;
+  font-weight: 500;
+}
+
+.tarjetaServicios .tarjetaServicios__imagen {
+  padding: 5vh;
+}
+
+/*newletter*/
+.newsletterServicios {
+  background-color: #121212;
+  text-align: center;
+  margin: 0;
+  padding: 2vh;
+}
+
+.newsletterServicios .newsletterServicios__titulo {
+  font-family: "Muni", sans-serif;
+  color: #f5f5f5;
+  font-weight: 600;
+  font-size: 2em;
+  padding: 1vh;
+}
+
+.newsletterServicios .newsletterServicios__boton {
+  color: #f5f5f5;
+  text-decoration: none;
+  background-color: #2F2F2F;
+  text-align: center;
+  width: 130px;
+  padding: 1vh 2vw;
+  border-radius: 20px;
+  display: block;
+  margin: auto auto;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 600;
+}
+
+.newsletterServicios .newsletterServicios__boton:hover {
+  background-color: #34FFC8;
+  color: #121212;
 }
 
 /*Fin contenido servicios*/

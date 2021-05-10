@@ -333,7 +333,7 @@ body{
         .nosotrosIndex__contenido__texto{
     
             font-family: $texto;
-            color: $blanco;
+            color: $grisClaro;
             font-weight: 500;
             text-align: center;
         }
@@ -458,7 +458,9 @@ body{
 
 /*Fin contenido index*/
 
-    /*Contenido Servicios*/
+/*Contenido Servicios*/
+
+/*bienvenida*/
 
 .bienvenidaServicios{
 
@@ -469,23 +471,24 @@ body{
     background-position:center;
     background-repeat: no-repeat;
     text-align: center;
-    padding: 25vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
    
     .bienvenidaServicios__titulo{
 
         font-family: $titulos;
         color: $blanco;
         font-weight: 900;
-        font-size: 3em;
+        font-size: 2.5em;
+        padding-top: 5vh;
     }
 
     .bienvenidaServicios__texto{
 
+        padding: 0;
         font-family: $texto;
         color: $blanco;
-        align-self: center;
-        justify-self: center;
-        text-align: center;
     }
 
     .bienvenidaServicios__boton{
@@ -524,21 +527,155 @@ body{
             
         }
         
-            .nosotrosIndex__contenido__texto{
-        
-                font-family: $texto;
+        .servicioTecnico__tarjetas{
+
+            padding: 4vh;
+    
+            h3{
+                
+                padding: 1vh;
+                font-family: $titulos;
                 color: $blanco;
-                font-weight: 500;
-                text-align: center;
+                font-weight: 600;
             }
-        }
+
+            .servicioTecnico__tarjetas__texto{
+
+                p{
+        
+                    padding: 1vh;
+                    font-family: $texto;
+                    color: $grisClaro;
+                    font-weight: 500;
+                } 
+            }
+
+            .servicioTecnico__tarjetas__lista{
+                
+                ul{
     
-        .nosotrosIndex_imagenes{
-    
-            padding: 3vh;
+                    padding: 0 15vw;
+                    font-family: $texto;
+                    font-weight: 500;
+                    color: $grisClaro;
+                }
+            }
         }
     }
 
+    /* Tarjetas servicios networking, consultoria it y data recovery*/
+
+    .tarjetaServicios--inverse{
+
+        background-color: $negro;
+        padding: 2vh;
+        margin: 0;
+
+        .tarjetaServicios__texto--inverse{
+
+            margin: 0;
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+
+            h2{
+
+                font-family: $titulos;
+                color: $blanco;
+                font-weight: 600;
+                font-size: 2.5em;
+                padding: 1vh;
+
+            }
+
+            p{
+
+                font-family: $texto;
+                color: $grisClaro;
+                font-weight: 500;
+            }
+        }
+
+        .tarjetaServicios__imagen--inverse{
+
+            padding: 5vh;
+        }
+    }
+
+    .tarjetaServicios{
+
+        background-color: $grisOscuro;
+        padding: 2vh;
+        margin: 0;
+
+        .tarjetaServicios__texto{
+
+            margin: 0;
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+
+            h2{
+
+                font-family: $titulos;
+                color: $blanco;
+                font-weight: 600;
+                font-size: 2.5em;
+                padding: 1vh;
+            }
+
+            p{
+
+                font-family: $texto;
+                color: $grisClaro;
+                font-weight: 500;
+            }
+        }
+
+        .tarjetaServicios__imagen{
+
+            padding: 5vh;
+        }
+    }
+
+    /*newletter*/
+
+    .newsletterServicios{
+
+        background-color: $negro;
+        text-align: center;
+        margin: 0;
+        padding: 2vh;
+
+        .newsletterServicios__titulo{
+
+            font-family: $titulos;
+            color: $blanco;
+            font-weight: 600;
+            font-size: 2em;
+            padding: 1vh;
+        }
+
+        .newsletterServicios__boton{
+
+            color: $blanco;
+            text-decoration: none;
+            background-color: $grisOscuro;
+            text-align: center;
+            width: 130px;
+            padding: 1vh 2vw;
+            border-radius: 20px;
+            display: block;
+            margin: auto auto;
+            font-family: $texto;
+            font-weight: 600;
+                
+            &:hover{
+                background-color: $verde;
+                color: $negro;
+            }     
+        }
+    }
 
 /*Fin contenido servicios*/
 
