@@ -15,20 +15,12 @@ a:link, a:visited, a:active {
 
 /* padding body para que el texto no se meta detras */
 body {
-  padding-top: 20vh;
-}
-
-/* solucion para modales que no se abren bien dentro de un bloque con position:fixed */
-.modal-backdrop {
-  display: none;
-}
-
-.modal {
-  background: rgba(0, 0, 0, 0.5);
+  padding-top: 17vh;
 }
 
 /*  Navbar header */
 .header .headerNavbar {
+  height: 17vh;
   background-color: #001b38;
   font-family: "Noto Sans", sans-serif;
   font-weight: 300;
@@ -40,6 +32,7 @@ body {
 
 .header .headerNavbar .headerNavbar__toggler {
   background-color: #001b38;
+  top: 0;
 }
 
 .header .headerNavbar .headerNavbar__navegacion .headerNavbar__navegacion__secciones {
