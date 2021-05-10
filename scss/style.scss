@@ -37,7 +37,7 @@ body{
         .headerNavbar__toggler{
 
             background-color: $azul;
-            
+
         }
 
         .headerNavbar__navegacion{
@@ -107,7 +107,7 @@ body{
 
             font-family: $titulos;
             font-weight: 600;
-            font-size: 1.6em;
+            font-size: 2em;
             color: $grisOscuro;
             text-align: center;
         }
@@ -118,6 +118,7 @@ body{
             color: $grisOscuro;
             padding: 2vh 0;
             text-align: justify;
+            font-size: 2em;
         }
 
         .footerRedes__logos{
