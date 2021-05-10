@@ -812,16 +812,54 @@ body{
 
     background-color: $grisOscuro ;
     margin: 0;
+    padding: 5vh;
     
     .formularioContacto__titulo{
 
+        font-family: $titulos;
+        color: $blanco;
+        font-weight: 600;
+        font-size: 3em;
+        padding: 1vh;
     }
 
     .formularioContacto__Contactos{
 
         display: flex;
         flex-flow: column nowrap;
-        
+        padding: 2vh;
+
+        a{
+            
+            font-family: $texto;
+            color: $blanco;
+            text-decoration: none;
+            padding: 2vh;
+        }
+    }
+
+    .formularioContacto__Formulario{
+
+        padding: 2vh;
+    }
+
+    .formularioContacto__boton{
+
+        color: $negro;
+        text-decoration: none;
+        background-color: $verde;
+        width: 130px;
+        padding: 1vh 1vw;
+        border-radius: 20px;
+        margin: 2vh auto 2vh auto;
+        display: block;
+        font-family: $texto;
+        font-weight: 600;
+        text-align: center;
+            
+        &:hover{
+            background-color: $blanco;
+        }
     }
 }
 
