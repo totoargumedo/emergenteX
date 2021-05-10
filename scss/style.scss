@@ -14,16 +14,8 @@ a:link, a:visited, a:active {
 /* padding body para que el texto no se meta detras */
 body{
     
-    padding-top: 20vh;
+    padding-top: 17vh;
 }
-/* solucion para modales que no se abren bien dentro de un bloque con position:fixed */
-.modal-backdrop {
-    display: none;
-  }
-  
-  .modal {
-    background: rgba(0,0,0,0.5);
-  }
 
 /*  Navbar header */
 
@@ -31,6 +23,7 @@ body{
     
     .headerNavbar{
 
+        height: 17vh;
         background-color: $azul;
         font-family: $texto;
         font-weight: 300;
@@ -44,6 +37,7 @@ body{
         .headerNavbar__toggler{
 
             background-color: $azul;
+            
         }
 
         .headerNavbar__navegacion{
