@@ -37,64 +37,60 @@ body {
 
 .header .headerNavbar .headerNavbar__logo {
   margin-left: 5vw;
-  height: 10vh;
-  width: 10vw;
 }
 
-.header .headerNavbar .headerNavbar__secciones {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  margin-right: 2vw;
+.header .headerNavbar .headerNavbar__toggler {
+  background-color: #001b38;
 }
 
-.header .headerNavbar .headerNavbar__secciones .nav-item {
+.header .headerNavbar .headerNavbar__navegacion .headerNavbar__navegacion__secciones {
+  background-color: #001b38;
+  text-align: center;
+}
+
+.header .headerNavbar .headerNavbar__navegacion .headerNavbar__navegacion__secciones .nav-item {
   padding: 1vh 1vw;
 }
 
-.header .headerNavbar .headerNavbar__secciones .nav-item:hover {
+.header .headerNavbar .headerNavbar__navegacion .headerNavbar__navegacion__secciones .nav-item:hover {
   border-bottom: 3px solid #34FFC8;
 }
 
-.header .headerNavbar .headerNavbar__boton {
+.header .headerNavbar .headerNavbar__navegacion .headerNavbar__boton {
   color: #121212;
   text-decoration: none;
   background-color: #f5f5f5;
   text-align: center;
-  width: 8vw;
-  padding: 10px;
+  width: 120px;
+  padding: 1vh 1vw;
   border-radius: 20px;
-  margin: 0 2vh;
+  margin: 0 1vw;
 }
 
-.header .headerNavbar .headerNavbar__boton:hover {
+.header .headerNavbar .headerNavbar__navegacion .headerNavbar__boton:hover {
   background-color: #34FFC8;
 }
 
-.header .headerNavbar .headerNavbar__boton--invertido {
+.header .headerNavbar .headerNavbar__navegacion .headerNavbar__boton--invertido {
   color: #121212;
   text-decoration: none;
   background-color: #34FFC8;
   text-align: center;
-  width: 8vw;
-  padding: 10px;
+  width: 120px;
+  padding: 1vh 1vw;
+  margin-right: 1vw;
   border-radius: 20px;
-  margin: 0 2vh;
 }
 
-.header .headerNavbar .headerNavbar__boton--invertido:hover {
+.header .headerNavbar .headerNavbar__navegacion .headerNavbar__boton--invertido:hover {
   background-color: #f5f5f5;
 }
 
+/*footer completo*/
 .footer {
   background-color: #34FFC8;
+  /*menus de navegacion footer*/
+  /*frame google maps*/
 }
 
 .footer .footerRedes {
@@ -106,16 +102,31 @@ body {
   font-weight: 600;
   font-size: 1.6em;
   color: #2F2F2F;
+  text-align: center;
 }
 
 .footer .footerRedes .footerRedes__texto {
   color: #2F2F2F;
   padding: 2vh 0;
+  text-align: justify;
 }
 
-.footer .footerRedes .footerRedes__logo {
-  height: 5vh;
-  width: 5vw;
+.footer .footerRedes .footerRedes__logos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.footer .footerRedes .footerRedes__logos .footerRedes__logo {
+  height: 2em;
+  width: 2em;
 }
 
 .footer .footerNavegacion {
@@ -126,12 +137,18 @@ body {
   color: #2F2F2F;
   font-family: "Muni", sans-serif;
   font-weight: 600;
+  font-size: 1.2em;
 }
 
 .footer .footerNavegacion .nav-link {
   color: #2F2F2F;
   font-family: "Noto Sans", sans-serif;
   font-weight: 600;
+  font-size: 0.8em;
+}
+
+.footer .footerNavegacion .nav-link:hover {
+  border-bottom: 3px solid #f5f5f5;
 }
 
 .footer .footerTecnico {
@@ -142,12 +159,19 @@ body {
   color: #2F2F2F;
   font-family: "Muni", sans-serif;
   font-weight: 600;
+  font-weight: 600;
+  font-size: 1.2em;
 }
 
 .footer .footerTecnico .nav-link {
   color: #2F2F2F;
   font-family: "Noto Sans", sans-serif;
   font-weight: 600;
+  font-size: 0.8em;
+}
+
+.footer .footerTecnico .nav-link:hover {
+  border-bottom: 3px solid #f5f5f5;
 }
 
 .footer .footerMapa {
@@ -157,32 +181,15 @@ body {
 
 .footer .footerDerechos {
   background-color: #121212;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  margin: 0;
 }
 
 .footer .footerDerechos .nav-link {
   color: #f5f5f5;
+  text-align: center;
   font-family: "Muni", sans-serif;
-  font-size: 0.7em;
+  font-size: 0.6em;
   font-weight: 800;
-  padding: 2vh;
-  margin: 3vh;
-}
-
-.footer .footerDerechos .nav-link--copy {
-  padding-right: 40vw;
 }
 
 .footer .footerDerechos .nav-link--hover:hover {

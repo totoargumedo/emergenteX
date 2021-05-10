@@ -40,62 +40,68 @@ body{
         .headerNavbar__logo{
 
             margin-left: 5vw;
-            height: 10vh;
-            width: 10vw;
+        }
+        
+        .headerNavbar__toggler{
+
+            background-color: $azul;
         }
 
-        .headerNavbar__secciones{
+        .headerNavbar__navegacion{
 
-            display: flex;
-            flex-flow: row nowrap;
-            justify-content: flex-end;
-            margin-right: 2vw;
+            .headerNavbar__navegacion__secciones{
 
-            .nav-item{
-
+                background-color: $azul;
+                text-align: center;
+    
+                .nav-item{
+    
+                    padding: 1vh 1vw;
+    
+                    &:hover{
+    
+                        border-bottom: 3px solid $verde;
+                    }
+                }
+                
+                
+            }
+            .headerNavbar__boton{
+        
+                color: $negro;
+                text-decoration: none;
+                background-color: $blanco;
+                text-align: center;
+                width: 120px;
                 padding: 1vh 1vw;
-
+                border-radius: 20px;
+                margin: 0 1vw;
+                    
                 &:hover{
-
-                    border-bottom: 3px solid $verde;
+                    background-color: $verde;
                 }
             }
-        }
-
-        .headerNavbar__boton{
-
-            color: $negro;
-            text-decoration: none;
-            background-color: $blanco;
-            text-align: center;
-            width: 8vw;
-            padding: 10px;
-            border-radius: 20px;
-            margin: 0 2vh;
-
-            &:hover{
+    
+            .headerNavbar__boton--invertido{
+    
+                color: $negro;
+                text-decoration: none;
                 background-color: $verde;
-            }
-        }
-
-        .headerNavbar__boton--invertido{
-
-            color: $negro;
-            text-decoration: none;
-            background-color: $verde;
-            text-align: center;
-            width: 8vw;
-            padding: 10px;
-            border-radius: 20px;
-            margin: 0 2vh;
-
-            &:hover{
-                background-color: $blanco;
+                text-align: center;
+                width: 120px;
+                padding: 1vh 1vw;
+                margin-right: 1vw;
+                border-radius: 20px;
+    
+                &:hover{
+                    background-color: $blanco;
+                }
             }
         }
     }
 }
 
+/*footer completo*/
 .footer{
 
     background-color: $verde;
@@ -103,13 +109,14 @@ body{
     .footerRedes{
 
         padding: 5vh;
-
+        
         .footerRedes__titulo{
 
             font-family: $titulos;
             font-weight: 600;
             font-size: 1.6em;
             color: $grisOscuro;
+            text-align: center;
         }
 
         .footerRedes__texto{
@@ -117,15 +124,25 @@ body{
             @extend .texto;
             color: $grisOscuro;
             padding: 2vh 0;
+            text-align: justify;
         }
 
-        .footerRedes__logo{
+        .footerRedes__logos{
 
-            height: 5vh;
-            width: 5vw;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-evenly;
+            
+            .footerRedes__logo{
+
+                height: 2em;
+                width: 2em;
+            }
         }
+
     }
 
+    /*menus de navegacion footer*/
     .footerNavegacion{
 
         padding: 5vh;
@@ -135,6 +152,7 @@ body{
             color: $grisOscuro;  
             font-family: $titulos;
             font-weight: 600;
+            font-size: 1.2em;
         }
 
         .nav-link{
@@ -142,6 +160,12 @@ body{
             color: $grisOscuro;
             font-family: $texto;
             font-weight: 600;
+            font-size: 0.8em;
+            
+            &:hover{
+
+                border-bottom: 3px solid $blanco;
+            }
         }
 
     }
@@ -155,6 +179,8 @@ body{
             color: $grisOscuro;  
             font-family: $titulos;
             font-weight: 600;
+            font-weight: 600;
+            font-size: 1.2em;
         }
 
         .nav-link{
@@ -162,9 +188,16 @@ body{
             color: $grisOscuro;
             font-family: $texto;
             font-weight: 600;
+            font-size: 0.8em;
+
+            &:hover{
+
+                border-bottom: 3px solid $blanco;
+            }
         }
     }
 
+    /*frame google maps*/
     .footerMapa{
 
         height: 70vh;
@@ -174,24 +207,15 @@ body{
     .footerDerechos{
 
         background-color: $negro;
-        display: flex;
-        flex-flow: row nowrap;
-        align-items: center;
-        justify-content: flex-end;
-        
+        margin: 0;
+
        .nav-link{
 
             color: $blanco;
+            text-align: center;
             font-family: $titulos;
-            font-size: 0.7em;
+            font-size: 0.6em;
             font-weight: 800;
-            padding: 2vh;
-            margin: 3vh;
-        }
-        
-        .nav-link--copy{
-
-            padding-right: 40vw;
         }
         
         .nav-link--hover:hover{
