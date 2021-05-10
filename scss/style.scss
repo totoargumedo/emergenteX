@@ -26,7 +26,7 @@ body{
         height: 17vh;
         background-color: $azul;
         font-family: $texto;
-        font-weight: 300;
+        font-weight: 500;
         
         
         .headerNavbar__logo{
@@ -64,10 +64,12 @@ body{
                 text-decoration: none;
                 background-color: $blanco;
                 text-align: center;
-                width: 120px;
+                width: 130px;
                 padding: 1vh 1vw;
                 border-radius: 20px;
                 margin: 0 1vw;
+                font-family: $texto;
+                font-weight: 600;
                     
                 &:hover{
                     background-color: $verde;
@@ -76,14 +78,9 @@ body{
     
             .headerNavbar__boton--invertido{
     
+                @extend .headerNavbar__boton;
                 color: $negro;
-                text-decoration: none;
                 background-color: $verde;
-                text-align: center;
-                width: 120px;
-                padding: 1vh 1vw;
-                margin-right: 1vw;
-                border-radius: 20px;
     
                 &:hover{
                     background-color: $blanco;
@@ -152,7 +149,7 @@ body{
             color: $grisOscuro;
             font-family: $texto;
             font-weight: 600;
-            font-size: 1em;
+            font-size: 0.9em;
             
             &:hover{
 
@@ -162,37 +159,10 @@ body{
 
     }
 
-    .footerTecnico{
-
-        padding: 5vh;
-        
-        .footerTecnico__titulo{
-
-            color: $grisOscuro;  
-            font-family: $titulos;
-            font-weight: 600;
-            font-weight: 600;
-            font-size: 1.5em;
-        }
-
-        .nav-link{
-
-            color: $grisOscuro;
-            font-family: $texto;
-            font-weight: 600;
-            font-size: 1em;
-
-            &:hover{
-
-                border-bottom: 3px solid $blanco;
-            }
-        }
-    }
-
     /*frame google maps*/
     .footerMapa{
 
-        height: 70vh;
+        height: 50vh;
         padding: 5vh;
     }
 
@@ -207,7 +177,7 @@ body{
             text-align: center;
             font-family: $titulos;
             font-size: 0.6em;
-            font-weight: 800;
+            font-weight: 600;
         }
         
         .nav-link--hover:hover{
@@ -217,9 +187,169 @@ body{
     }
 }
 
+/*Fin header y footer*/
+
 /*Contenido Index*/
 
-/*recepcion*/
+/*bienvenida*/
 
+.bienvenidaIndex{
+
+    margin: 0;
+    height: auto;
+    background-image: url("/images/fondoindex.jpg");
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+
+    .bienvenidaIndex__titulo{
+
+        display: none;
+    }
+
+    .bienvenidaIndex__texto{
+
+        @extend .texto;
+        color: $blanco;
+        align-self: center;
+        justify-self: center;
+        text-align: center;
+    }
+}
+
+/* Resumen Servicios en Index */
+
+.serviciosIndex{
+
+    background-color: $negro;
+    padding: 6vh 6vw;
+
+    .serviciosIndex__titulo{
+
+        font-family: $titulos;
+        color: $blanco;
+        font-weight: 600;
+        font-size: 3em;
+        text-align: center;
+        padding: 1vh;
+    }
+
+    .serviciosIndex__textoTitulo{
+
+        font-family: $texto;
+        color: $blanco;
+        font-weight: 500;
+        text-align: center;
+    }
+
+    .serviciosIndex__tarjetas{
+
+        padding: 4vh;
+        text-align: center;
+
+        h3{
+            
+            padding: 1vh;
+            font-family: $titulos;
+            color: $verde;
+            font-weight: 600;
+        }
+
+        p{
+
+            padding: 1vh;
+            font-family: $texto;
+            color: $blanco;
+            font-weight: 500;
+        }
+    }
+
+    .serviciosIndex____boton{
+
+        color: $blanco;
+        text-decoration: none;
+        background-color: $grisOscuro;
+        text-align: center;
+        width: 130px;
+        padding: 1vh 2vw;
+        border-radius: 20px;
+        display: block;
+        margin: 0 auto;
+        font-family: $texto;
+        font-weight: 600;
+        box-shadow: 0 14px 50px 0 $verde;
+            
+        &:hover{
+            background-color: $verde;
+            box-shadow: 0 10px 40px 0 $blanco;
+            color: $negro;
+        }        
+    }
+}
+
+/*Resumen Nosotros en Index*/
+
+.nosotrosIndex{
+
+    margin: 0;
+    background-color: $grisOscuro;
+    padding: 6vh;
+
+    .nosotrosIndex__contenido{
+
+        margin: auto 0;
+        padding: 4vh;
+
+        .nosotrosIndex__contenido__titulo{
+    
+            font-family: $titulos;
+            color: $blanco;
+            font-weight: 600;
+            font-size: 3em;
+            text-align: center;
+            padding: 1vh;
+        }
+    
+        .nosotrosIndex__contenido__texto{
+    
+            font-family: $texto;
+            color: $blanco;
+            font-weight: 500;
+            text-align: center;
+        }
+    }
+
+    .nosotrosIndex_imagenes{
+
+        padding: 3vh;
+    }
+}
+
+/*confianza index*/
+
+.confianzaIndex{
+
+    margin: 0;
+    padding: 6vh;
+    background-color: $grisOscuro;
+
+    .confianzaIndex__titulo{
+
+        font-family: $titulos;
+        color: $blanco;
+        font-weight: 600;
+        font-size: 3em;
+        text-align: center;
+        padding: 1vh;   
+    }
+
+    .confianzaIndex__logos{
+
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
 
 /*Fin contenido index*/
