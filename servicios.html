@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--link bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!--link fuentes adobe fonts-->
     <link rel="stylesheet" href="https://use.typekit.net/ubt8cgo.css">
     <!--link estilos personalizados-->
@@ -29,9 +30,9 @@
 
             <!--Links a secciones con collapse a toggler y botones de registro-->
             <div class="collapse navbar-collapse d-md-flex justify-content-end headerNavbar__navegacion" id="navbarSecciones">
-                <div class="navbar-nav  headerNavbar__navegacion__secciones">
-                    <a class="nav-item nav-link " href="index.html">Inicio</a>
-                    <a class="nav-item nav-link active" href="servicios.html">Servicios</a>
+                <div class="navbar-nav navbar-nav-scroll headerNavbar__navegacion__secciones">
+                    <a class="nav-item nav-link active" href="index.html">Inicio</a>
+                    <a class="nav-item nav-link" href="servicios.html">Servicios</a>
                     <a class="nav-item nav-link" href="nosotros.html">Nosotros</a>
                     <a class="nav-item nav-link" href="novedades.html">Novedades</a>
                     <a class="nav-item nav-link" href="contacto.html">Contacto</a>
@@ -45,10 +46,110 @@
                        
         </nav>
     </header>
+    <!--Fin header-->
+    
+    <!-- Boton flotante whatsapp-->
+    <a href="https://wa.me/5211234567890?text=Me%20gustaría%20saber%20el%20precio%20del%20coche" class="whatsapp" target="_blank"> <i class="fa fa-whatsapp whatsapp-icon"></i></a>
 
     <main>
-        <section>
 
+        <!--Pantalla bienvenida-->
+        <section class="bienvenidaIndex container-fluid row">
+            <h1 class="bienvenidaIndex__titulo">EMERGENTE</h1>
+            <h2 class="bienvenidaIndex__titulo">Servicios Informaticos</h2>
+            <img class="bienvenidaIndex__logo col-12 col-sm-6" src="images/logo-grande.png" alt="Logo Emergente">
+            <p class="bienvenidaIndex__texto col-12 col-sm-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore veniam magnam officiis facere, alias sequi sint voluptas reprehenderit ipsum, similique vitae officia obcaecati blanditiis. Provident facere expedita cupiditate unde? Repellendus?</p>
+        </section>
+
+        <!--Servicios Index-->
+        <section class="serviciosIndex container-fluid">
+
+            <h2 class="serviciosIndex__titulo">Servicios</h2>
+            <p class="serviciosIndex__textoTitulo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur repellendus animi vero dolor necessitatibus, vitae omnis nesciunt reiciendis eius expedita, itaque aliquam quas fugiat? Atque obcaecati suscipit sapiente deleniti minus.</p>
+
+            <!--thumbnail servicios-->
+            <div class="row">
+                <div class="serviciosIndex__tarjetas col-12 col-sm-6 col-md-3">
+                    <img src="images/serviciotecnicothumbnail.png" alt="Servicio Tecnico">
+                    <h3>Servicio Tecnico</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur dolorum officiis at omnis tenetur ex id porro cum laudantium, in quasi quia totam dicta est culpa harum reprehenderit, illum doloribus!</p>
+                </div>
+                <div class="serviciosIndex__tarjetas col-12 col-sm-6 col-md-3">
+                    <img src="images/serviciotecnicothumbnail.png" alt="Servicio Tecnico">
+                    <h3>Servicio Tecnico</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur dolorum officiis at omnis tenetur ex id porro cum laudantium, in quasi quia totam dicta est culpa harum reprehenderit, illum doloribus!</p>
+                </div>
+                <div class="serviciosIndex__tarjetas col-12 col-sm-6 col-md-3">
+                    <img src="images/serviciotecnicothumbnail.png" alt="Servicio Tecnico">
+                    <h3>Servicio Tecnico</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur dolorum officiis at omnis tenetur ex id porro cum laudantium, in quasi quia totam dicta est culpa harum reprehenderit, illum doloribus!</p>
+                </div>
+                <div class="serviciosIndex__tarjetas col-12 col-sm-6 col-md-3">
+                    <img src="images/serviciotecnicothumbnail.png" alt="Servicio Tecnico">
+                    <h3>Servicio Tecnico</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur dolorum officiis at omnis tenetur ex id porro cum laudantium, in quasi quia totam dicta est culpa harum reprehenderit, illum doloribus!</p>
+                </div>
+            </div>
+            <!--Boton ver-->
+            <a class="serviciosIndex____boton" href="login.html">Ver mas</a>
+        </section>
+
+        <!--Nosotros index-->
+        <section class="row nosotrosIndex">
+            <div class="col-12 col-md-6 nosotrosIndex__contenido">
+                <h2 class="nosotrosIndex__contenido__titulo" >Nosotros</h2>
+                <p class="nosotrosIndex__contenido__texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus in vero minima et asperiores dignissimos laboriosam quia repudiandae quo at illo numquam voluptatem dolore provident distinctio, ratione voluptas itaque perferendis.</p>
+            </div>
+            <div class="col-12 col-md-6">
+                <div class="row">
+                    <img class="col-6 nosotrosIndex_imagenes" src="images/nosotrosindex1.png" alt="">
+                    <img class="col-6 nosotrosIndex_imagenes" src="images/nosotrosindex2.png" alt="">
+                    <img class="col-12 nosotrosIndex_imagenes" src="images/nosotrosindex3.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <!--novedades-->
+
+        <section class="novedadesIndex container-fluid">
+            <h2 class="novedadesIndex__titulo">Novedades</h2>
+            <p class="novedadesIndex__textoTitulo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur repellendus animi vero dolor necessitatibus, vitae omnis nesciunt reiciendis eius expedita, itaque aliquam quas fugiat? Atque obcaecati suscipit sapiente deleniti minus.</p>
+
+            <!--thumbnail servicios-->
+            <div class="row">
+                <div class="novedadesIndex__tarjetas col-12 col-sm-6 col-md-4">
+                    <img src="images/ssd.png" alt="Servicio Tecnico">
+                    <h6>Categoría | Fecha</h6>
+                    <h3>Servicio Tecnico</h3>
+                    <p class="d-none d-md-block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur dolorum officiis at omnis tenetur ex id porro cum laudantium, in quasi quia totam dicta est culpa harum reprehenderit, illum doloribus!</p>
+                </div>
+                <div class="novedadesIndex__tarjetas col-12 col-sm-6 col-md-4">
+                    <img src="images/ssd.png" alt="Servicio Tecnico">
+                    <h6>Categoría | Fecha</h6>
+                    <h3>Servicio Tecnico</h3>
+                    <p class="d-none d-md-block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur dolorum officiis at omnis tenetur ex id porro cum laudantium, in quasi quia totam dicta est culpa harum reprehenderit, illum doloribus!</p>
+                </div>
+                <div class="novedadesIndex__tarjetas col-12 col-sm-6 col-md-4">
+                    <img src="images/ssd.png" alt="Servicio Tecnico">
+                    <h6>Categoría | Fecha</h6>
+                    <h3>Servicio Tecnico</h3>
+                    <p class="d-none d-md-block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur dolorum officiis at omnis tenetur ex id porro cum laudantium, in quasi quia totam dicta est culpa harum reprehenderit, illum doloribus!</p>
+                </div>
+            </div>
+            <!--Boton ver-->
+            <a class="novedadesIndex____boton" href="login.html">BLOG</a>
+        </section>
+
+        <!--confianza-->
+        <section class="confianzaIndex">
+            <h2 class="confianzaIndex__titulo">Confian en nosotros</h2>
+            <div class="confianzaIndex__logos">
+                <img class="col-1" src="images/logo-iconica.svg" alt="Logo Iconica" class="col-2">
+                <img class="col-1" src="images/logo-iconica.svg" alt="Logo Iconica" class="col-2">
+                <img class="col-1" src="images/logo-iconica.svg" alt="Logo Iconica" class="col-2">
+                <img class="col-1" src="images/logo-iconica.svg" alt="Logo Iconica" class="col-2">
+                <img class="col-1" src="images/logo-iconica.svg" alt="Logo Iconica" class="col-2">
+            </div>
         </section>
     </main>
 
@@ -108,15 +209,15 @@
         <!--Barra de navegacion secciones inferior-->
             <nav class="nav flex-column col-lg-2 col-md-3 d-none d-md-block footerNavegacion">
                 <h4 class="footerNavegacion__titulo">Navegación</h4>
-                <a class="nav-link" href="#">Servicios</a>
+                <a class="nav-link " href="#">Servicios</a>
                 <a class="nav-link" href="#">Nosotros</a>
-                <a class="nav-link" href="#">Novedades</a>
+                <a class="nav-link " href="#">Novedades</a>
                 <a class="nav-link" href="#">Contacto</a>
             </nav>
 
         <!--Barra de navegacion de servicio tecnico-->
-            <nav class="nav flex-column col-lg-2 col-md-3 d-none d-md-block footerTecnico">
-                <h4 class="footerTecnico__titulo">Servicios</h4>
+            <nav class="nav flex-column col-lg-2 col-md-3 d-none d-md-block footerNavegacion">
+                <h4 class="footerNavegacion__titulo">Servicios</h4>
                 <a class="nav-link" href="#">Servicio Tecnico</a>
                 <a class="nav-link" href="#">Networking</a>
                 <a class="nav-link" href="#">Consultoría IT</a>
