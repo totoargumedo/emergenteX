@@ -29,7 +29,6 @@ body {
 
 /*  Navbar header */
 .header .headerNavbar {
-  height: 20vh;
   background-color: #001b38;
   font-family: "Noto Sans", sans-serif;
   font-weight: 300;
@@ -195,4 +194,8 @@ body {
 .footer .footerDerechos .nav-link--hover:hover {
   border-bottom: 3px solid #34FFC8;
 }
+
+/*Contenido Index*/
+/*recepcion*/
+/*Fin contenido index*/
 /*# sourceMappingURL=style.css.map */
