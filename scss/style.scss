@@ -457,3 +457,88 @@ body{
 }
 
 /*Fin contenido index*/
+
+    /*Contenido Servicios*/
+
+.bienvenidaServicios{
+
+    margin: 0;
+    height: min(83vh);
+    background-image: url("/images/fototaller1.png");
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 25vh;
+   
+    .bienvenidaServicios__titulo{
+
+        font-family: $titulos;
+        color: $blanco;
+        font-weight: 900;
+        font-size: 3em;
+    }
+
+    .bienvenidaServicios__texto{
+
+        font-family: $texto;
+        color: $blanco;
+        align-self: center;
+        justify-self: center;
+        text-align: center;
+    }
+
+    .bienvenidaServicios__boton{
+
+        color: $negro;
+        text-decoration: none;
+        background-color: $verde;
+        width: 130px;
+        padding: 1vh 2vw;
+        border-radius: 20px;
+        margin: auto auto;
+        font-family: $texto;
+        font-weight: 600;
+            
+        &:hover{
+            background-color: $blanco;
+        }
+    }
+}
+    /*contenido servicio tecnico*/
+    
+    .servicioTecnico{
+
+        margin: 0;
+        background-color: $negro;
+        padding: 6vh;
+        
+        .servicioTecnico__titulo{
+        
+            font-family: $titulos;
+            color: $blanco;
+            font-weight: 600;
+            font-size: 3em;
+            text-align: center;
+            padding: 1vh;
+            
+        }
+        
+            .nosotrosIndex__contenido__texto{
+        
+                font-family: $texto;
+                color: $blanco;
+                font-weight: 500;
+                text-align: center;
+            }
+        }
+    
+        .nosotrosIndex_imagenes{
+    
+            padding: 3vh;
+        }
+    }
+
+
+/*Fin contenido servicios*/
+
