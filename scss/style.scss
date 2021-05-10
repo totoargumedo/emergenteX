@@ -37,7 +37,6 @@ body{
         .headerNavbar__toggler{
 
             background-color: $azul;
-
         }
 
         .headerNavbar__navegacion{
@@ -107,7 +106,7 @@ body{
 
             font-family: $titulos;
             font-weight: 600;
-            font-size: 2em;
+            font-size: 1.6em;
             color: $grisOscuro;
             text-align: center;
         }
@@ -118,7 +117,6 @@ body{
             color: $grisOscuro;
             padding: 2vh 0;
             text-align: justify;
-            font-size: 2em;
         }
 
         .footerRedes__logos{
@@ -146,7 +144,7 @@ body{
             color: $grisOscuro;  
             font-family: $titulos;
             font-weight: 600;
-            font-size: 1.2em;
+            font-size: 1.5em;
         }
 
         .nav-link{
@@ -154,7 +152,7 @@ body{
             color: $grisOscuro;
             font-family: $texto;
             font-weight: 600;
-            font-size: 0.8em;
+            font-size: 1em;
             
             &:hover{
 
@@ -174,7 +172,7 @@ body{
             font-family: $titulos;
             font-weight: 600;
             font-weight: 600;
-            font-size: 1.2em;
+            font-size: 1.5em;
         }
 
         .nav-link{
@@ -182,7 +180,7 @@ body{
             color: $grisOscuro;
             font-family: $texto;
             font-weight: 600;
-            font-size: 0.8em;
+            font-size: 1em;
 
             &:hover{
 
