@@ -239,6 +239,7 @@ body{
 
 /* Resumen Servicios en Index */
 
+
 .serviciosIndex{
 
     background-color: $negro;
@@ -497,11 +498,12 @@ body{
         text-decoration: none;
         background-color: $verde;
         width: 130px;
-        padding: 1vh 2vw;
+        padding: 1vh 1vw;
         border-radius: 20px;
         margin: auto auto;
         font-family: $texto;
         font-weight: 600;
+        text-align: center;
             
         &:hover{
             background-color: $blanco;
@@ -663,7 +665,7 @@ body{
             background-color: $grisOscuro;
             text-align: center;
             width: 130px;
-            padding: 1vh 2vw;
+            padding: 1vh 1vw;
             border-radius: 20px;
             display: block;
             margin: auto auto;
@@ -679,3 +681,148 @@ body{
 
 /*Fin contenido servicios*/
 
+/*Contenido Nosotros*/
+
+/*bienvenida*/
+
+.bienvenidaNosotros{
+
+    margin: 0;
+    height: min(83vh);
+    background-image: url("/images/fotonosotros.png");
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    text-align: center;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2vh;
+   
+    .bienvenidaNosotros__titulo{
+
+        font-family: $titulos;
+        color: $blanco;
+        font-weight: 900;
+        font-size: 2.5em;
+        padding-top: 5vh;
+    }
+
+    .bienvenidaNosotros__texto{
+
+        padding: 2vh;
+        font-family: $texto;
+        color: $blanco;
+    }
+}
+
+.valoresNosotros{
+
+    margin: 0;
+    background-color: $negro;
+
+    .valoresNosotros__titulo{
+
+        font-family: $titulos;
+        text-align: center;
+        color: $blanco;
+        font-weight: 600;
+        font-size: 2.5em;
+        padding-top: 5vh;
+    }
+
+    .valoresNosotros__tarjetas{
+
+        padding: 4vh;
+        text-align: center;
+
+        h3{
+            
+            padding: 2vh 1vw;
+            font-family: $titulos;
+            color: $blanco;
+            font-weight: 600;
+        }
+
+        p{
+
+            padding: 1vh;
+            font-family: $texto;
+            color: $blanco;
+            font-weight: 500;
+        }
+    }
+}
+
+/* el equipo*/
+
+.equipoNosotros{
+
+    background-color: $grisOscuro;
+    padding: 6vh 6vw;
+    margin: 0;
+
+    .equipoNosotros__titulo{
+
+        font-family: $titulos;
+        color: $blanco;
+        font-weight: 600;
+        font-size: 3em;
+        text-align: center;
+        padding: 1vh;
+    }
+
+    .equipoNosotros__textoTitulo{
+
+        font-family: $texto;
+        color: $blanco;
+        font-weight: 500;
+        text-align: center;
+    }
+
+    .equipoNosotros__tarjetas{
+
+        padding: 4vh;
+        text-align: center;
+
+        h3{
+            
+            padding: 1vh;
+            font-family: $titulos;
+            color: $verde;
+            font-weight: 600;
+        }
+
+        p{
+
+            padding: 1vh;
+            font-family: $texto;
+            color: $blanco;
+            font-weight: 500;
+        }
+    }
+}
+
+/* Fin contenido nosotros*/
+
+/* contenido contacto*/
+
+.formularioContacto{
+
+    background-color: $grisOscuro ;
+    margin: 0;
+    
+    .formularioContacto__titulo{
+
+    }
+
+    .formularioContacto__Contactos{
+
+        display: flex;
+        flex-flow: column nowrap;
+        
+    }
+}
+
+/* Fin contenido contacto*/
