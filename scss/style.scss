@@ -227,13 +227,23 @@ body{
         display: none;
     }
 
+    .bienvenidaIndex__titulo--2{
+
+        color: $blanco
+    }
+
     .bienvenidaIndex__texto{
 
-        @extend .texto;
         color: $blanco;
         align-self: center;
         justify-self: center;
-        text-align: center;
+
+        h2{
+
+            font-family:$titulos;
+            font-weight: 600;
+            font-size: 2.5em;
+        }
     }
 }
 
@@ -481,7 +491,7 @@ body{
         font-family: $titulos;
         color: $blanco;
         font-weight: 900;
-        font-size: 2.5em;
+        font-size: 3em;
         padding-top: 5vh;
     }
 
@@ -532,8 +542,8 @@ body{
         .servicioTecnico__tarjetas{
 
             padding: 4vh;
-    
-            h3{
+            
+            .servicioTecnico__tarjetas__titulo{
                 
                 padding: 1vh;
                 font-family: $titulos;
@@ -541,13 +551,23 @@ body{
                 font-weight: 600;
             }
 
+            .servicioTecnico__tarjetas__titulo--right{
+
+                @extend .servicioTecnico__tarjetas__titulo;
+                text-align: right;
+            }
+
             .servicioTecnico__tarjetas__texto{
+
+                display: flex;
+                flex-flow: column;
+                justify-content: center;
 
                 p{
         
                     padding: 1vh;
                     font-family: $texto;
-                    color: $grisClaro;
+                    color: $blanco;
                     font-weight: 500;
                 } 
             }
@@ -556,10 +576,10 @@ body{
                 
                 ul{
     
-                    padding: 0 15vw;
+                    padding: 1vh;
                     font-family: $texto;
                     font-weight: 500;
-                    color: $grisClaro;
+                    color: $blanco;
                 }
             }
         }
@@ -593,7 +613,7 @@ body{
             p{
 
                 font-family: $texto;
-                color: $grisClaro;
+                color: $blanco;
                 font-weight: 500;
             }
         }
@@ -629,7 +649,7 @@ body{
             p{
 
                 font-family: $texto;
-                color: $grisClaro;
+                color: $blanco;
                 font-weight: 500;
             }
         }
@@ -800,6 +820,11 @@ body{
             font-family: $texto;
             color: $blanco;
             font-weight: 500;
+        }
+
+        img{
+
+            border-radius: 150px;
         }
     }
 }
